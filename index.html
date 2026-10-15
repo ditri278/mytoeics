@@ -3,27 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TOEIC Master - Tự Học TOEIC Theo Lộ Trình</title>
+  <title>TOEIC Master - Tự Học TOEIC Theo Lộ Trình & Kho Tài Liệu</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
-    body { background-color: #f4f6f9; color: #333; }
+    body { background-color: #f4f6f9; color: #333; line-height: 1.6; }
     header { background-color: #1a73e8; color: white; padding: 20px 10%; display: flex; justify-content: space-between; align-items: center; }
-    header h1 { font-size: 24px; border: none; padding: 0; color: white; }
+    header h1 { font-size: 24px; color: white; }
     nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: bold; }
     
     .container { padding: 40px 10%; }
     .hero { background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 30px; text-align: center; }
     .hero h2 { color: #1a73e8; margin-bottom: 10px; }
     
-    .roadmap-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+    .roadmap-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 40px; }
     .card { background: white; padding: 25px; border-radius: 8px; border-top: 5px solid #1a73e8; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
     .card h3 { color: #1a73e8; margin-bottom: 15px; }
     .card ul { list-style-type: none; padding-left: 0; }
     .card li { padding: 8px 0; border-bottom: 1px solid #eee; }
-    .card li:last-child { border-bottom: none; }
     
-    .btn { display: inline-block; background: #1a73e8; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 15px; font-weight: bold; }
+    .btn { display: inline-block; background: #1a73e8; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 15px; font-weight: bold; text-align: center; }
     .btn:hover { background: #1557b0; }
+    
+    /* Section Kho Tài Liệu */
+    .resource-section { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .resource-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 2px solid #e8f0fe; padding-bottom: 15px; }
+    .resource-header h2 { color: #1a73e8; }
+    .resource-list { list-style: none; padding: 0; }
+    .resource-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 15px; border-bottom: 1px solid #eee; transition: background 0.2s; }
+    .resource-item:hover { background-color: #f8f9fa; }
+    .file-title { font-weight: bold; color: #202124; }
+    .file-tag { font-size: 12px; padding: 3px 8px; border-radius: 4px; background: #e8f0fe; color: #1a73e8; margin-left: 10px; }
     
     footer { text-align: center; padding: 20px; background: #202124; color: white; margin-top: 40px; }
   </style>
@@ -34,20 +43,19 @@
     <h1>TOEIC Learning Hub</h1>
     <nav>
       <a href="#roadmap">Lộ Trình</a>
-      <a href="#grammar">Ngữ Pháp</a>
-      <a href="#vocab">Từ Vựng</a>
-      <a href="#practice">Luyện Đề</a>
+      <a href="#resources">Kho Tài Liệu Drive</a>
     </nav>
   </header>
 
   <div class="container">
     <div class="hero">
       <h2>Chinh Phục TOEIC Nhanh Chóng & Hiệu Quả</h2>
-      <p>Hệ thống bài học thiết kế chuẩn hóa theo mục tiêu từ 300 đến 800+ điểm.</p>
-      <a href="#roadmap" class="btn">Bắt Đầu Học Ngay</a>
+      <p>Hệ thống bài học thiết kế chuẩn hóa theo mục tiêu từ 300 đến 800+ điểm kèm kho tài liệu đầy đủ.</p>
+      <a href="https://drive.google.com/drive/folders/1JKtfSMFQw6PEykd8qKbVCnhbLe39CXUG?usp=sharing" target="_blank" class="btn" style="background-color: #34a853;">📂 Mở Toàn Bộ Thư Mục Google Drive</a>
     </div>
 
-    <h2 id="roadmap" style="margin-bottom: 20px;">Lộ Trình Học Chi Tiết</h2>
+    <!-- LỘ TRÌNH HỌC -->
+    <h2 id="roadmap" style="margin-bottom: 20px; color: #1a73e8;">Lộ Trình Học Chi Tiết</h2>
     <div class="roadmap-grid">
       <div class="card">
         <h3>Chặng 1: Target 300 - 450</h3>
@@ -57,7 +65,7 @@
           <li>600 Từ vựng TOEIC thiết yếu</li>
           <li>Luyện nghe Part 1 & Part 2</li>
         </ul>
-        <a href="#" class="btn">Vào Bài Học</a>
+        <a href="https://drive.google.com/drive/folders/1JKtfSMFQw6PEykd8qKbVCnhbLe39CXUG?usp=sharing" target="_blank" class="btn">Vào Kho Tài Liệu</a>
       </div>
 
       <div class="card" style="border-top-color: #fbbc04;">
@@ -68,7 +76,7 @@
           <li>Phương pháp Paraphrasing Part 3 & 4</li>
           <li>Kỹ năng Skimming & Scanning Part 7</li>
         </ul>
-        <a href="#" class="btn" style="background: #fbbc04;">Vào Bài Học</a>
+        <a href="https://drive.google.com/drive/folders/1JKtfSMFQw6PEykd8qKbVCnhbLe39CXUG?usp=sharing" target="_blank" class="btn" style="background: #fbbc04;">Vào Kho Tài Liệu</a>
       </div>
 
       <div class="card" style="border-top-color: #34a853;">
@@ -79,9 +87,29 @@
           <li>Mẹo tránh bẫy từ vựng & phát âm</li>
           <li>Luyện đề thi thật ETS full 120 phút</li>
         </ul>
-        <a href="#" class="btn" style="background: #34a853;">Vào Bài Học</a>
+        <a href="https://drive.google.com/drive/folders/1JKtfSMFQw6PEykd8qKbVCnhbLe39CXUG?usp=sharing" target="_blank" class="btn" style="background: #34a853;">Vào Kho Tài Liệu</a>
       </div>
     </div>
+
+    <!-- KHO TÀI LIỆU DỰ PHÒNG CHUYÊN NGHIỆP -->
+    <div id="resources" class="resource-section">
+      <div class="resource-header">
+        <h2>📚 Danh Sách Tài Liệu Tự Học TOEIC</h2>
+        <a href="https://drive.google.com/drive/folders/1JKtfSMFQw6PEykd8qKbVCnhbLe39CXUG?usp=sharing" target="_blank" class="btn" style="margin-top: 0;">Truy Cập Google Drive</a>
+      </div>
+      <p style="margin-bottom: 15px;">Toàn bộ tài liệu PDF, Audio luyện nghe và bài tập được lưu trữ trực tiếp trên Google Drive để bạn dễ dàng xem online hoặc tải về máy tính/điện thoại.</p>
+      
+      <ul class="resource-list">
+        <li class="resource-item">
+          <div>
+            <span class="file-title">📁 Thư mục tổng hợp 20+ Tài liệu TOEIC</span>
+            <span class="file-tag">Google Drive</span>
+          </div>
+          <a href="https://drive.google.com/drive/folders/1JKtfSMFQw6PEykd8qKbVCnhbLe39CXUG?usp=sharing" target="_blank" class="btn" style="margin: 0; padding: 6px 12px; font-size: 13px;">Mở File</a>
+        </li>
+      </ul>
+    </div>
+
   </div>
 
   <footer>
